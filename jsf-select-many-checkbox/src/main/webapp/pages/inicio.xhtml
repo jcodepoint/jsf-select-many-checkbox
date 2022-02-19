@@ -22,7 +22,7 @@
 				<h:panelGrid columns="1" styleClass="table-style" columnClasses="table-col-1,table-col-2">
 					<h:outputText value="Países" styleClass="title" />
 					
-   					<h:selectManyCheckbox value="#{bean.checkedCountries}">
+   					<h:selectManyCheckbox id="chk-countries" value="#{bean.checkedCountries}">
    						<f:selectItem itemValue="argentina" itemLabel="Argentina" />
    						<f:selectItem itemValue="uruguay" itemLabel="Uruguay" />
    						<f:selectItem itemValue="paraguay" itemLabel="Paraguay" />
@@ -34,7 +34,7 @@
 					<h:outputText value="Ríos" styleClass="title" />
 					<p />
 					
-   					<h:selectManyCheckbox value="#{bean.checkedRivers}">
+   					<h:selectManyCheckbox value="#{bean.checkedRivers}" layout="lineDirection">
    						<f:selectItems value="#{bean.rivers}" />
 					</h:selectManyCheckbox>
 
@@ -42,7 +42,7 @@
 					<h:outputText value="Lagos" styleClass="title" />
 					<p />
 					
-   					<h:selectManyCheckbox value="#{bean.checkedLakes}">
+   					<h:selectManyCheckbox value="#{bean.checkedLakes}" styleClass="page-direction-table" layout="pageDirection">
    						<f:selectItems value="#{bean.lakes}" />
 					</h:selectManyCheckbox>
 

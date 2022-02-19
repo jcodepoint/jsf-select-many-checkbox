@@ -84,3 +84,8 @@ html,body {
 .error {
      color: red;
 }
+
+.page-direction-table {
+	width: 100%;
+	text-align: left;
+}
